@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int num, i;
+
+    printf("Enter a number to see its table: ");
+    scanf("%d", &num);
+
+    printf("Multiplication Table for %d:\n", num);
+
+    // The 'for' loop: starts at 1, goes up to 10, increases by 1 each time
+    for(i = 1; i <= 10; ++i) {
+        printf("%d * %d = %d\n", num, i, num * i);
+    }
+
+    return 0;
+}
