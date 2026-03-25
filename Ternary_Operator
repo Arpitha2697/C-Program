@@ -1,0 +1,3 @@
+printf("\n=== Ternary Operator ===\n");
+    int num = -5;
+    printf("%d is %s\n", num, (num >= 0) ? "positive" : "negative");
