@@ -1,0 +1,10 @@
+printf("\n=== Relational & Logical Operators ===\n");
+    printf("a > b  : %d\n", a > b);   // 1 = true
+    printf("a < b  : %d\n", a < b);   // 0 = false
+    printf("a == b : %d\n", a == b);
+    printf("a != b : %d\n", a != b);
+
+    int x = 1, y = 0;  // booleans as int (1=true, 0=false)
+    printf("x && y : %d\n", x && y);  // AND
+    printf("x || y : %d\n", x || y);  // OR
+    printf("!x     : %d\n", !x);      // NOT
