@@ -1,0 +1,10 @@
+int a = 10, b = 3;
+    printf("=== Arithmetic Operators ===\n");
+    printf("a = %d, b = %d\n", a, b);
+    printf("a + b = %d\n", a + b);
+    printf("a - b = %d\n", a - b);
+    printf("a * b = %d\n", a * b);
+    printf("a / b = %d\n", a / b);   // integer division
+    printf("a %% b = %d\n", a % b);  // modulus
+    printf("a++   = %d\n", a++);     // post-increment (prints 10, then a becomes 11)
+    printf("++b   = %d\n", ++b);     // pre-increment  (b becomes 4, then prints 4)
