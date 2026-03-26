@@ -1,0 +1,11 @@
+ printf("\n=== Switch with char ===\n");
+    char grade = 'B';
+    switch (grade) {
+        case 'A': printf("Excellent!\n");    break;
+        case 'B': printf("Good job!\n");     break;  // ← this runs
+        case 'C': printf("Average.\n");      break;
+        default:  printf("Try harder!\n");   break;
+    }
+
+    return 0;
+}
