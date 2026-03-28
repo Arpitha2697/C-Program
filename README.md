@@ -33,6 +33,6 @@ Learning the fundamentals of low-level programming to master memory and logic.
   <ul>
     <li>File Handling (Read/Write)</li>
     <li>Error Handling & Debugging</li>
-    <li>Bitwise Operators & Macros</li>
+    <li>Bitwise Operator's & Macros</li>
   </ul>
 </details>
