@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Structure to store book details
+struct Book {
+    int id;
+    char title[50];
+    char author[50];
+    float price;
+};
+
+// Function declarations
+void addBook();
+void displayBooks();
+void searchBook();
+
+int main() {
+    int choice;
+    
+    while(1) {
+        printf("\n--- Library Management System ---\n");
+        printf("1. Add New Book\n");
+        printf("2. Display All Books\n");
+        printf("3. Search Book by ID\n");
+        printf("4. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        
+        switch(choice) {
+            case 1: addBook(); break;
+            case 2: displayBooks(); break;
+            case 3: searchBook(); break;
+            case 4: exit(0);
+            default: printf("Invalid choice! Please try again.\n");
+        }
+    }
+    return 0;
+}
+
+// Function to add a book to a file
+void addBook() {
+    FILE *fp = fopen("library.dat", "ab+");
+    if (fp == NULL) {
+        printf("Error opening file!\n");
+        return;
+    }
+
+    struct Book b;
+    printf("\nEnter Book ID: ");
+    scanf("%d", &b.id);
+    getchar(); // Clear buffer
+    printf("Enter Title: ");
+    fgets(b.title, 50, stdin);
+    b.title[strcspn(b.title, "\n")] = 0; // Remove newline
+    printf("Enter Author: ");
+    fgets(b.author, 50, stdin);
+    b.author[strcspn(b.author, "\n")] = 0;
+    printf("Enter Price: ");
+    scanf("%f", &b.price);
+
+    fwrite(&b, sizeof(struct
