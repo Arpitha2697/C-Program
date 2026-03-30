@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include <string.h>
+
+// Structure to hold our time slot attributes
+struct TimeSlot {
+    int hour;
+    char task[50];
+};
+
+void showDayPlan(struct TimeSlot day[], int totalHours) {
+    printf("\n==== YOUR DAILY CAPSULE ====\n");
+    printf("%-10s | %-s\n", "Time Block", "Scheduled Task / Need");
+    printf("--------------------------------\n");
+    
+    for (int i = 0; i < totalHours; i++) {
+        printf("%02d:00 hrs  | %s\n", day[i].hour, day[i].task);
+    }
+    printf("================================\n");
+}
+
+int main() {
+    int hoursInDay = 5; // Let's track 5 major blocks for simplicity
+    struct TimeSlot myDay[5];
+
+    // Auto-initializing the hours for the user
+    myDay[0].hour = 5;  // 5 AM
+    myDay[1].hour = 9;  // 9 AM
+    myDay[2].hour = 13; // 1 PM
+    myDay[3].hour = 17; // 5 PM
+    myDay[4].hour = 21; // 9 PM
+
+    // Filling the capsule with default "Free Time"
+    for(int i = 0; i < hoursInDay; i++) {
+        strcpy(myDay[i].task, "Free Time (No Needs Added)");
+    }
+
+    int choice;
+    while(1) {
+        printf("\n1. View Daily Capsule\n");
+        printf("2. Write a Need/Task to a Time Block\n");
+        printf("3. Exit\n");
+        printf("Enter choice: ");
+        scanf("%d", &choice);
+
+        if (choice == 1) {
+            showDayPlan(myDay, hoursInDay);
+        } 
+        else if (choice == 2) {
+            int selectedHour, found = 0;
+            printf("\nEnter the hour to schedule (5, 9, 13, 17, 21): ");
+            scanf("%d", &selectedHour);
+
+            for(int i = 0; i < hoursInDay; i++) {
+                if(myDay[i].hour == selectedHour) {
+                    printf("What do you need to do at %02d:00?: ", selectedHour);
+                    getchar(); // Clean newline buffer
+                    fgets(myDay[i].task, 50, stdin);
+                    myDay[i].task[strcspn(myDay[i].task, "\n")] = 0; // Remove enter key
+                    printf("Capsule updated!\n");
+                    found = 1;
+                    break;
+                }
+            }
+            if(!found) printf("That specific hour is not in your tracker!\n");
+        } 
+        else if (choice == 3) {
+            printf("Stay productive! Goodbye.\n");
+            break;
+        } 
+        else {
+            printf("Invalid choice!\n");
+        }
+    }
+    return 0;
+}
