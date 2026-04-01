@@ -6,7 +6,7 @@ Learning the fundamentals of low-level programming to master memory and logic.
   <ul>
     <li>Syntax & Variables</li>
     <li>Data Types & Operators</li>
-    <li>Conditionals (If/Else, Switch)</li>
+    <li>Conditionals(If/Else, Switch)</li>
   </ul>
 </details>
 
