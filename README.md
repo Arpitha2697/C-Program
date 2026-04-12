@@ -24,7 +24,7 @@ Learning the fundamentals of low-level programming to master memory and logic.
   <ul>
     <li>Memory Addresses & Pointers</li>
     <li>Arrays & Strings</li>
-    <li>Structs, Unions, & Typedef</li>
+    <li>Structs, Unions, & Typedef. </li>
   </ul>
 </details>
 
