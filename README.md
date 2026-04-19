@@ -29,7 +29,7 @@ Learning the fundamentals of low-level programming to master memory and logic.
 </details>
 
 <details>
-  <summary><b>➔ Advanced & Files (Day 9-10)</b></summary>
+  <summary><b>➔ Advanced & Files  (Day 9-10)</b></summary>
   <ul>
     <li>File Handling (Read/Write)</li>
     <li>Error Handling & Debugging</li>
