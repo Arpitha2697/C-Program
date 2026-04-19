@@ -21,7 +21,7 @@ Learning the fundamentals of low-level programming to master memory and logic.
 
 <details>
   <summary><b>➔ Pointers & Memory (Day 6-8)</b></summary>
-  <ul>
+  <ul> 
     <li>Memory Addresses & Pointers</li>
     <li>Arrays & Strings</li>
     <li>Structs, Unions, & Typedef. </li>
