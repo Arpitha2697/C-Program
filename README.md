@@ -2,7 +2,7 @@
 Learning the fundamentals of low-level programming to master memory and logic.
 
 <details>
-  <summary><b>➔ Basics & Logic (Day 1-3)</b></summary>
+  <summary><b>➔ Basics & Logic</b></summary>
   <ul>
     <li>Syntax & Variables</li>
     <li>Data Types & Operators</li>
@@ -11,7 +11,7 @@ Learning the fundamentals of low-level programming to master memory and logic.
 </details>
 
 <details>
-  <summary><b>➔ Loops & Functions (Day 4-5)</b></summary>
+  <summary><b>➔ Loops & Functions</b></summary>
   <ul>
     <li>For, While, & Break/Continue</li>
     <li>Function Declaration & Parameters</li>
@@ -20,7 +20,7 @@ Learning the fundamentals of low-level programming to master memory and logic.
 </details>
 
 <details>
-  <summary><b>➔ Pointers & Memory (Day 6-8)</b></summary>
+  <summary><b>➔ Pointers & Memory</b></summary>
   <ul> 
     <li>Memory Addresses & Pointers</li>
     <li>Arrays & Strings</li>
