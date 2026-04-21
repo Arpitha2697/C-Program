@@ -27,12 +27,3 @@ Learning the fundamentals of low-level programming to master memory and logic.
     <li>Structs, Unions, & Typedef. </li>
   </ul>
 </details>
-
-<details>
-  <summary><b>➔ Advanced & Files  (Day 9-10)</b></summary>
-  <ul>
-    <li>File Handling (Read/Write)</li>
-    <li>Error Handling & Debugging</li>
-    <li>Bitwise Operator's & Macros</li>
-  </ul>
-</details>
